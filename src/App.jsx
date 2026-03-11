@@ -21,8 +21,8 @@ import { DarkModeProvider } from "./context/DarkModeContext";
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      // stateTime: 60 * 1000,
-      stateTime: 0,
+      staleTime: 0,
+      retry: false,
     },
   },
 });
